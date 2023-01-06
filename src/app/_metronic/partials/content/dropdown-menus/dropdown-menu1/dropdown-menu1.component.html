@@ -1,0 +1,30 @@
+<div class="px-7 py-5">
+  <div class="fs-5 text-dark fw-bolder">Filter Options</div>
+</div>
+
+<div class="separator border-gray-200"></div>
+
+<div class="px-7 py-5">
+  <div class="mb-10">
+    <label class="form-label fw-bold">Year:</label>
+
+    <div>
+      <select 
+      #YearSelect
+      (change)="OnChangeYear(YearSelect.value)"
+        class="form-select form-select-solid"
+        data-kt-select2="true"
+        data-placeholder="Select option"
+        data-allow-clear="true"
+      >
+        <option></option>
+        <option selected value="2023">2023</option>
+        <option ng-value="2022">2022</option>
+        <option ng-value="2021">2021</option>
+        <option ng-value="2020">2020</option>
+      </select>
+    </div>
+  </div>
+
+ 
+</div>

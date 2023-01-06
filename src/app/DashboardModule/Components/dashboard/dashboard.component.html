@@ -1,0 +1,169 @@
+<!--begin Today Data-->
+
+<div *ngIf="todayHeadQuarterDashBoardStatsCountModel$ | async as _todayHeadQuarterDashBoardStatsCountModel">
+<!--begin::Row-->
+<div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+  <!--begin::Col-->
+ <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+  <app-cards-widget20
+  cssClass="h-md-30 mb-3 mb-xl-10"
+  TextColorCLass ='#50CD89'
+
+  description="Customer" color="gray-300"
+  Header="Financial Overview" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TotalCustomerBalance}}"
+    ></app-cards-widget20>
+</div>
+<!--end::Col-->
+  <!--begin::Col-->
+  <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget20
+    cssClass="h-md-30 mb-3 mb-xl-10"
+    TextColorCLass ='#50CD89'
+
+    description="Supplier" color="gray-300"
+    Header="Financial Overview" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TotalSupplierBalance}}"
+      ></app-cards-widget20>
+  </div>
+  <!--end::Col-->
+  <!--begin::Col-->
+  <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget20
+    cssClass="h-md-30 mb-3 mb-xl-10"
+    TextColorCLass ='#50CD89'
+
+    description="Sales" color="gray-300"
+    Header="Sales" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TodaySales}}"
+      ></app-cards-widget20>
+  </div>
+  <!--end::Col-->
+  <!--begin::Col-->
+  <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget20
+    TextColorCLass ='#50CD89'
+
+    cssClass="h-md-30 mb-3 mb-xl-10"
+    description="Purchases" color="gray-300"
+    Header="Today" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TodayPurchases}}"
+      ></app-cards-widget20>
+  </div>
+  <!--end::Col-->
+  <!--begin::Col-->
+  <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget20
+    TextColorCLass ='#50CD89'
+
+        cssClass="h-md-30 mb-3 mb-xl-10"
+    description="Expenses" color="gray-300"
+    Header="Today" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TodayExpenses}}"
+      ></app-cards-widget20>
+  </div>
+  <!--end::Col-->
+
+
+
+  <!-- begin::Col-->
+  <!-- <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget17 cssClass="h-md-50 mb-5 mb-xl-10"></app-cards-widget17>
+    <app-lists-widget26 class="h-lg-50"></app-lists-widget26>
+  </div> -->
+  <!--end::Col-->
+
+
+
+</div>
+<!--end::Row-->
+<!--begin::Row-->
+<div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+   <!--begin::Col-->
+ <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+  <app-cards-widget20
+  TextColorCLass ='#50CD89'
+  cssClass="h-md-30 mb-3 mb-xl-10"
+  description="Orders" color="gray-300"
+  Header="Today Online" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TotalOnlineOrder}}"
+    ></app-cards-widget20>
+</div>
+<!--end::Col-->
+  <!--begin::Col-->
+  <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget20
+    TextColorCLass ='#50CD89'
+
+    cssClass="h-md-30 mb-3 mb-xl-10"
+    description="Orders Amount" color="gray-300"
+    Header="Today Online" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TotalOnlineOrderAmount}}"
+      ></app-cards-widget20>
+  </div>
+  <!--end::Col-->
+  <!--begin::Col-->
+  <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget20
+    TextColorCLass ='#50CD89'
+
+    cssClass="h-md-30 mb-3 mb-xl-10"
+    description="Orders" color="gray-300"
+    Header="Today System" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TotalVaplongOrder}}"
+      ></app-cards-widget20>
+  </div>
+  <!--end::Col-->
+  <!--begin::Col-->
+  <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget20
+    TextColorCLass ='#50CD89'
+
+    cssClass="h-md-30 mb-3 mb-xl-10"
+    description="Orders Amount" color="gray-300"
+    Header="Today System" Value="{{_todayHeadQuarterDashBoardStatsCountModel.TotalVaplongOrderAmount}}"
+      ></app-cards-widget20>
+  </div>
+  <!--end::Col-->
+
+
+
+  <!-- begin::Col-->
+  <!-- <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
+    <app-cards-widget17 cssClass="h-md-50 mb-5 mb-xl-10"></app-cards-widget17>
+    <app-lists-widget26 class="h-lg-50"></app-lists-widget26>
+  </div> -->
+  <!--end::Col-->
+
+
+
+</div>
+<!--end::Row-->
+</div>
+<!--End Today Data-->
+
+<!--begin::Row-->
+<div class="row gx-5 gx-xl-10">
+  <!--begin::Col-->
+  <div class="col-xxl-12 mb-5 mb-xl-10"  *ngIf="AnnualDashboardStatsForPurchase$ | async as _AnnualDashboardStatsForPurchase"
+  >
+    <app-annual-dashboard-stats
+    Title="Purchase Invoice"
+    (YearChanged)="PurchaseYearChangedHandler($event)"
+
+    [AnnualDashboardStats]="_AnnualDashboardStatsForPurchase"
+     cssClass="h-xl-100" chartHeight="275px"></app-annual-dashboard-stats>
+  </div>
+  <!--end::Col-->
+</div>
+<!--end::Row-->
+<!--begin::Row-->
+
+<div class="row gx-5 gx-xl-10">
+  <!--begin::Col-->
+<div class="col-xxl-12 mb-5 mb-xl-10"  *ngIf="AnnualDashboardStatsForrSale$ | async as _AnnualDashboardStatsForrSale"
+>
+  <app-annual-dashboard-stats
+  Title="Sales Invoice"
+  (YearChanged)="StatsYearChangedHandler($event)"
+
+  [AnnualDashboardStats]="_AnnualDashboardStatsForrSale"
+  cssClass="h-xl-100" chartHeight="275px"></app-annual-dashboard-stats>
+</div>
+<!--end::Col-->
+
+</div>
+<!--end::Row-->
+
